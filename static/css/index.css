@@ -80,27 +80,22 @@ a:hover {
 }
 
 .placeholder-preview {
-  border: 2px dashed #d1d5db;
+  overflow: hidden;
+  border: 1px solid rgba(47, 111, 237, 0.12);
   border-radius: 28px;
   background:
     linear-gradient(135deg, rgba(47, 111, 237, 0.05), rgba(255, 106, 136, 0.05));
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
 }
 
-.placeholder-preview__inner {
-  padding: 3.5rem 2rem;
-  text-align: center;
+.placeholder-preview__figure {
+  margin: 0;
 }
 
-.placeholder-preview__title {
-  margin-bottom: 0.75rem;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #111827;
-}
-
-.placeholder-preview__text {
-  color: #6b7280;
-  font-size: 1rem;
+.placeholder-preview__image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .paper-content {
@@ -173,7 +168,4 @@ a:hover {
     min-width: 0;
   }
 
-  .placeholder-preview__inner {
-    padding: 2.5rem 1.25rem;
-  }
 }
