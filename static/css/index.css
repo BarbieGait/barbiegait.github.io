@@ -81,7 +81,6 @@ a:hover {
 
 .placeholder-preview {
   overflow: hidden;
-  border: 1px solid rgba(47, 111, 237, 0.12);
   border-radius: 28px;
   background:
     linear-gradient(135deg, rgba(47, 111, 237, 0.05), rgba(255, 106, 136, 0.05));
