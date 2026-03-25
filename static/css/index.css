@@ -38,23 +38,67 @@ a:hover {
 }
 
 .publication-title {
-  margin-bottom: 1rem !important;
-  font-size: clamp(2.8rem, 6vw, 4.6rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  margin-bottom: 0.5rem !important;
+  font-family: "Helvetica Neue", "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.45rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .publication-subtitle {
   max-width: 900px;
-  margin: 0 auto 1rem;
-  font-size: clamp(1.1rem, 2vw, 1.45rem);
-  line-height: 1.5;
+  margin: 0 auto;
+  font-size: clamp(1.05rem, 1.9vw, 1.38rem);
+  line-height: 1.45;
+  font-weight: 500;
   color: #374151;
+}
+
+.hero-authors {
+  max-width: 900px;
+  margin: 1.4rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem 0.45rem;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.author-entry {
+  white-space: nowrap;
+}
+
+.author-name {
+  color: #2f6fed;
+}
+
+.hero-affiliations {
+  max-width: 980px;
+  margin: 0.7rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1rem;
+  color: #1f2937;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.hero-affiliation {
+  text-align: center;
+}
+
+.hero-note {
+  margin: 0.35rem auto 0;
+  color: #4b5563;
+  font-size: 0.95rem;
 }
 
 .hero-copy {
   max-width: 760px;
-  margin: 0 auto;
+  margin: 1.1rem auto 0;
   color: #4b5563;
   font-size: 1.05rem;
   line-height: 1.8;
@@ -165,6 +209,20 @@ a:hover {
 
   .publication-links .button {
     min-width: 0;
+  }
+
+  .hero-authors {
+    gap: 0.15rem 0.35rem;
+    line-height: 1.8;
+  }
+
+  .hero-affiliations {
+    display: block;
+  }
+
+  .hero-affiliation {
+    display: block;
+    margin-top: 0.15rem;
   }
 
 }
