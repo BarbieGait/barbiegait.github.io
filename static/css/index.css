@@ -113,7 +113,7 @@ a:hover {
 }
 
 .preview-container {
-  width: min(calc(100% - 32px), 560px);
+  width: min(calc(100% - 32px), 1120px);
   margin: 0 auto;
 }
 
