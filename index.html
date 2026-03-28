@@ -29,10 +29,10 @@
         BarbieGait: An Identity-Consistent Synthetic Human Dataset with Versatile Cloth-Changing for Gait Recognition
       </h1>
       <div class="hero-authors" aria-label="Authors">
-        <span class="author-entry"><span class="author-name">Qingyuan Cai</span><sup>1</sup>,</span>
-        <span class="author-entry"><span class="author-name">Saihui Hou</span><sup>1</sup>,</span>
-        <span class="author-entry"><span class="author-name">Xuecai Hu</span><sup>2</sup>,</span>
-        <span class="author-entry"><span class="author-name">Yongzhen Huang</span><sup>1,3*</sup></span>
+        <span class="author-entry"><a class="author-name" href="https://andyen512.github.io/" target="_blank" rel="noopener noreferrer">Qingyuan Cai</a><sup>1</sup>,</span>
+        <span class="author-entry"><a class="author-name" href="https://housaihui.cn/" target="_blank" rel="noopener noreferrer">Saihui Hou</a><sup>1</sup>,</span>
+        <span class="author-entry"><a class="author-name" href="https://scholar.google.com/citations?user=O87WSxUAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">Xuecai Hu</a><sup>2</sup>,</span>
+        <span class="author-entry"><a class="author-name" href="https://scholar.google.com/citations?user=OH7-k7oAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">Yongzhen Huang</a><sup>1,3*</sup></span>
       </div>
       <div class="hero-affiliations" aria-label="Affiliations">
         <span class="hero-affiliation"><sup>1</sup>School of Artificial Intelligence, Beijing Normal University</span>
@@ -95,54 +95,117 @@
       <div class="overview-grid">
         <a class="overview-card" href="#barbiegait">
           <h3>BarbieGait</h3>
-          <p>Dataset overview and key visuals coming soon.</p>
+          <p>A large-scale identity-preserving gait dataset with controllable clothing variations.</p>
         </a>
         <a class="overview-card" href="#gaitclif">
           <h3>GaitCLIF</h3>
-          <p>Model design and training pipeline coming soon.</p>
+          <p>A unified model for robust gait representation learning under appearance changes.</p>
         </a>
         <a class="overview-card" href="#experiments">
           <h3>Experiments</h3>
-          <p>Benchmarks, ablations, and qualitative results coming soon.</p>
+          <p>A comprehensive evaluation framework for cross-clothing gait recognition, demonstrating consistent improvements and strong generalization.</p>
         </a>
       </div>
     </section>
 
     <section class="content-section" id="barbiegait">
       <h2>BarbieGait</h2>
-      <p>
-        Content for the BarbieGait section will be added here.
-      </p>
       <div class="panel">
-        <h3>Content Coming Soon</h3>
-        <div class="placeholder-box">Dataset figures and details will appear here.</div>
+        <div class="experiment-divider experiment-divider--major section-divider">
+          <span>BarbieGait Generation System</span>
+        </div>
+        <div class="placeholder-box figure-box">
+          <img
+            class="figure-box__image"
+            src="./static/images/generation_system.png"
+            alt="Generation system figure for BarbieGait"
+          >
+        </div>
       </div>
     </section>
 
     <section class="content-section" id="gaitclif">
       <h2>GaitCLIF</h2>
-      <p>
-        Content for the GaitCLIF section will be added here.
-      </p>
       <div class="panel">
-        <h3>Content Coming Soon</h3>
-        <div class="placeholder-box">Model diagrams and method details will appear here.</div>
+        <div class="paper-figure-grid">
+          <figure class="paper-figure paper-figure--primary">
+            <img
+              class="paper-figure__image"
+              src="./static/images/GaitCLIF-top.png"
+              alt="GON overview in GaitCLIF"
+            >
+            <figcaption class="paper-figure__caption">
+              <strong>Overview of GaitCLIF.</strong>
+              (a) GON, the core normalization unit.
+              (b) GON-P3D and (c) GON-3D, two GON-based visual blocks used in the visual stages of GaitCLIF.
+              (d) GON-FC, a GON-enhanced FC block used in the Head of GaitCLIF.
+              (e) The overall GaitCLIF framework for cross-clothing gait recognition.
+            </figcaption>
+          </figure>
+          <figure class="paper-figure paper-figure--secondary">
+            <img
+              class="paper-figure__image"
+              src="./static/images/GaitCLIF-bottom.png"
+              alt="Visual stages and overall GaitCLIF framework"
+            >
+          </figure>
+        </div>
       </div>
     </section>
 
     <section class="content-section" id="experiments">
       <h2>Experiments</h2>
-      <p>
-        Content for the Experiments section will be added here.
-      </p>
-      <div class="panel-grid">
-        <div class="panel">
-          <h3>Benchmark Results</h3>
-          <div class="placeholder-box">Tables and quantitative comparisons will appear here.</div>
-        </div>
-        <div class="panel">
-          <h3>Qualitative Results</h3>
-          <div class="placeholder-box">Visualizations and examples will appear here.</div>
+      <div class="panel">
+        <div class="experiment-figure-stack">
+          <div class="experiment-divider experiment-divider--major">
+            <span>Performance on BarbieGait</span>
+          </div>
+          <figure class="experiment-figure">
+            <img
+              class="experiment-figure__image"
+              src="./figures/barbiebase.png"
+              alt="BarbieGait benchmark result figure"
+            >
+          </figure>
+          <div class="experiment-divider experiment-divider--major">
+            <span>Performance on Real Datasets</span>
+          </div>
+          <figure class="experiment-figure">
+            <img
+              class="experiment-figure__image"
+              src="./figures/CCPG_SUSTech1K.png"
+              alt="CCPG and SUSTech1K evaluation figure"
+            >
+          </figure>
+          <div class="experiment-divider">
+            <span>BarbieGait-to-Real Evaluation</span>
+          </div>
+          <div class="experiment-figure-grid">
+            <div class="experiment-subgroup">
+              <div class="experiment-divider experiment-divider--minor">
+                <span>Downstream to Real Evaluation</span>
+              </div>
+              <figure class="experiment-figure experiment-figure--half">
+                <img
+                  class="experiment-figure__image"
+                  src="./figures/DownStream2Real.png"
+                  alt="Downstream to real evaluation figure"
+                >
+              </figure>
+            </div>
+            <div class="experiment-subgroup">
+              <div class="experiment-divider experiment-divider--minor">
+                <span>Upstream to Real Evaluation</span>
+              </div>
+              <figure class="experiment-figure experiment-figure--half experiment-figure--vcenter">
+                <img
+                  class="experiment-figure__image"
+                  src="./figures/UpStream2Real.png"
+                  alt="Upstream to real evaluation figure"
+                >
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -161,5 +224,23 @@
       BarbieGait project page.
     </footer>
   </div>
+  <script>
+    function syncGaitclifFigureHeight() {
+      const grid = document.querySelector(".paper-figure-grid");
+      const leftFigure = document.querySelector(".paper-figure--primary");
+      const rightFigure = document.querySelector(".paper-figure--secondary");
+      if (!grid || !leftFigure || !rightFigure) return;
+
+      rightFigure.style.height = "";
+
+      if (window.innerWidth <= 768) return;
+
+      const targetHeight = Math.ceil(leftFigure.getBoundingClientRect().height);
+      rightFigure.style.height = `${targetHeight}px`;
+    }
+
+    window.addEventListener("load", syncGaitclifFigureHeight);
+    window.addEventListener("resize", syncGaitclifFigureHeight);
+  </script>
 </body>
 </html>
