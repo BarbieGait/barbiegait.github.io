@@ -112,6 +112,11 @@ a:hover {
   padding-top: 1rem;
 }
 
+.preview-container {
+  width: min(calc(100% - 32px), 1140px);
+  margin: 0 auto;
+}
+
 .placeholder-preview {
   overflow: hidden;
   border-radius: 28px;
@@ -120,14 +125,26 @@ a:hover {
   box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
 }
 
-.placeholder-preview__figure {
-  margin: 0;
+.placeholder-preview__pdf {
+  width: 100%;
+  aspect-ratio: 1299 / 620;
+  overflow: hidden;
+  border-radius: 28px;
 }
 
-.placeholder-preview__image {
+.placeholder-preview__pdf object {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  border: 0;
+  background: #ffffff;
+}
+
+.placeholder-preview__fallback {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  color: #4b5563;
+  font-size: 0.95rem;
 }
 
 .paper-content {
